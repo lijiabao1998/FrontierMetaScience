@@ -1,0 +1,33 @@
+{
+  "id": "META-002",
+  "domain": "metascience",
+  "title": "AI-assisted science 的 provenance-complete reproducibility",
+  "status": "OPEN",
+  "priority": "A",
+  "checked_on": "2026-09-28",
+  "statement": "當LLM參與literature search、code、analysis與writing時，最少需要保存哪些prompt/model/tool/data/code lineage才能讓第三方重現關鍵claim。",
+  "known_result": "2026 Nature Computational Science指出LLM使reproducibility增加新層次；SDL review將provenance-complete experimentation列為下一階段核心要求。",
+  "open_gap": "closed model version drift、tool side effects、web content mutability與large trace burden。",
+  "first_task": "對一個小計算結果做三種recording levels：final code only、code+environment、full action/provenance；讓獨立agent重現。",
+  "evaluator": "reproduction success、time-to-reproduce、missing dependency count、trace storage cost。",
+  "validation_limits": "完整log不保證scientific correctness；也需避免泄露secret/私人資料。",
+  "completion_criterion": "找到最小但足夠的provenance contract，在held-out workflows顯著提高獨立重現率。",
+  "screening_note": "2026-09-28 初始有界文獻篩查。MetaScience研究研究流程本身；每輪需保留protocol版本與外部證據，不以本repo自我評價當成功。",
+  "screening_queries": [
+    "LLM reproducibility provenance science 2026"
+  ],
+  "sources": [
+    {
+      "title": "Reproducibility in the era of large language models",
+      "url": "https://www.nature.com/articles/s43588-026-01061-2",
+      "kind": "editorial",
+      "supports": "LLM時代reproducibility與reporting challenges"
+    },
+    {
+      "title": "The past, present and future of self-driving laboratories",
+      "url": "https://www.nature.com/articles/s41570-026-00847-2",
+      "kind": "review",
+      "supports": "provenance-complete experimentation"
+    }
+  ]
+}

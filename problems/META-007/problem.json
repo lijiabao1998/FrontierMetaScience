@@ -1,0 +1,27 @@
+{
+  "id": "META-007",
+  "domain": "metascience",
+  "title": "Negative results / failure logs 的資訊價值",
+  "status": "OPEN",
+  "priority": "B",
+  "checked_on": "2026-09-28",
+  "statement": "完整記錄失敗是否能減少重複工作、改善下一輪方向選擇，及哪些failure metadata最有predictive value。",
+  "known_result": "fast-science/reproducibility文獻呼籲更完整透明的research artefacts；本庫治理也把未做成事項列為正式輸出。",
+  "open_gap": "failure publication selection、taxonomy consistency、future-use counterfactual與documentation cost。",
+  "first_task": "在本研究所後續30個rounds中預註冊failure fields；隨機讓下一個agent看到full vs minimal failure summary（不影響安全資訊），比較重複錯誤。",
+  "evaluator": "duplicate-failure rate、time saved、next-round success、documentation cost。",
+  "validation_limits": "觀察“有log的case更成功”會selection bias；需預註冊比較。",
+  "completion_criterion": "有控制的內部/外部replication顯示failure metadata能降低重複錯誤或提高決策效率。",
+  "screening_note": "2026-09-28 初始有界文獻篩查。MetaScience研究研究流程本身；每輪需保留protocol版本與外部證據，不以本repo自我評價當成功。",
+  "screening_queries": [
+    "negative results reproducibility research artefacts 2026"
+  ],
+  "sources": [
+    {
+      "title": "Recognizing reproducibility and reusability in times of fast science",
+      "url": "https://www.nature.com/articles/s42256-026-01219-7",
+      "kind": "editorial",
+      "supports": "透明research artefacts與reusability背景"
+    }
+  ]
+}

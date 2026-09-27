@@ -1,0 +1,33 @@
+{
+  "id": "META-008",
+  "domain": "metascience",
+  "title": "Multi-agent scientific verification 的 diversity vs correlated error",
+  "status": "OPEN",
+  "priority": "A",
+  "checked_on": "2026-09-28",
+  "statement": "多個agent互相review何時真正降低錯誤，何時只是共享training/data/tools造成的correlated agreement。",
+  "known_result": "agentic science正在增加；process-level reproduction結果顯示current systems仍有共同execution bottlenecks，單純多agent不等於獨立證據。",
+  "open_gap": "model-family dependence、shared retrieval、shared evaluator bugs與social convergence。",
+  "first_task": "建立100個有known truth的science-like toy claims；比較same-model replicas、different models、independent implementation與shared-tool variants。",
+  "evaluator": "false-accept rate、error correlation、marginal verifier value、compute-normalized accuracy。",
+  "validation_limits": "品牌不同不等於統計獨立；同一錯誤evaluator可讓所有agent一致錯。",
+  "completion_criterion": "能從observable diversity/provenance預測verification gain，並在held-out tasks驗證。",
+  "screening_note": "2026-09-28 初始有界文獻篩查。MetaScience研究研究流程本身；每輪需保留protocol版本與外部證據，不以本repo自我評價當成功。",
+  "screening_queries": [
+    "multi agent scientific verification correlated errors 2026"
+  ],
+  "sources": [
+    {
+      "title": "Overview of the NLPCC 2026 Shared Task 11: Agent-Based Experiment Reproduction from Scientific Papers",
+      "url": "https://arxiv.org/abs/2609.11117",
+      "kind": "primary",
+      "supports": "agent reproduction performance與process bottlenecks"
+    },
+    {
+      "title": "AI scientists are changing research — institutions, funders and publishers must respond",
+      "url": "https://www.nature.com/articles/d41586-026-00934-w",
+      "kind": "comment",
+      "supports": "AI-driven science的治理與驗證需求"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "META-001",
+  "domain": "metascience",
+  "title": "Agent-based experiment reproduction 的 execution bottleneck",
+  "status": "OPEN",
+  "priority": "A",
+  "checked_on": "2026-09-28",
+  "statement": "科學agent從paper到可執行reproduction時，失敗主要發生在literature understanding、environment setup、data acquisition、execution、metric matching還是result interpretation。",
+  "known_result": "2026 AgentActionBench用process-oriented traces評估150篇ML/AI4Science papers，報告current systems仍受限且execution是主要瓶頸。",
+  "open_gap": "不同fields/tools下bottleneck是否相同、human hints效應、final-repo-only evaluation會漏掉多少失敗。",
+  "first_task": "選一篇公開、小成本、完整code/data的paper；2個agents相同budget獨立重現並逐action分類。",
+  "evaluator": "stage success、time/token、intervention count、metric match、trace rubric與human agreement。",
+  "validation_limits": "只選容易reproduce的paper會selection bias；agent熟悉paper需記錄。",
+  "completion_criterion": "跨多領域sample重現execution bottleneck pattern，並找到能改善它的可重現intervention。",
+  "screening_note": "2026-09-28 初始有界文獻篩查。MetaScience研究研究流程本身；每輪需保留protocol版本與外部證據，不以本repo自我評價當成功。",
+  "screening_queries": [
+    "AgentActionBench experiment reproduction 2026"
+  ],
+  "sources": [
+    {
+      "title": "Overview of the NLPCC 2026 Shared Task 11: Agent-Based Experiment Reproduction from Scientific Papers",
+      "url": "https://arxiv.org/abs/2609.11117",
+      "kind": "primary",
+      "supports": "process-oriented agent experiment reproduction benchmark與execution bottleneck"
+    }
+  ]
+}

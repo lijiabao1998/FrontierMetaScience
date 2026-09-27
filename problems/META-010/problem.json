@@ -1,0 +1,33 @@
+{
+  "id": "META-010",
+  "domain": "metascience",
+  "title": "AI discovery advantage：能力、compute、tooling與selection的分解",
+  "status": "OPEN",
+  "priority": "A",
+  "checked_on": "2026-09-28",
+  "statement": "當AI系統產生“新發現”時，多少優勢來自reasoning/model、多少來自更多compute、better search/evaluator、tool access或挑選適合AI的問題。",
+  "known_result": "AI-for-science系統與agentic reproduction正在產生更強結果，但不同systems常同時改變model、tools、compute與task selection，難以歸因。",
+  "open_gap": "factorial evaluation成本、hidden human assistance、publication selection與novelty verification。",
+  "first_task": "選3個小型可精確驗證tasks，做2×2×2：model quality、tool access、search budget；盲化novelty review。",
+  "evaluator": "success、objective gain、compute-normalized gain、human time、novelty confirmation。",
+  "validation_limits": "單一benchmark不能代表science；“new score”不一定scientific discovery。",
+  "completion_criterion": "跨task families可重現地分解主要contributions，並由獨立review確認新穎性/正確性。",
+  "screening_note": "2026-09-28 初始有界文獻篩查。MetaScience研究研究流程本身；每輪需保留protocol版本與外部證據，不以本repo自我評價當成功。",
+  "screening_queries": [
+    "AI scientific discovery evaluation reproducibility 2026"
+  ],
+  "sources": [
+    {
+      "title": "The past, present and future of self-driving laboratories",
+      "url": "https://www.nature.com/articles/s41570-026-00847-2",
+      "kind": "review",
+      "supports": "autonomous science的scalability/generalizability/provenance"
+    },
+    {
+      "title": "Reproducibility in the era of large language models",
+      "url": "https://www.nature.com/articles/s43588-026-01061-2",
+      "kind": "editorial",
+      "supports": "LLM-assisted science的reproducibility需求"
+    }
+  ]
+}

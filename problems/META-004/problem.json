@@ -1,0 +1,33 @@
+{
+  "id": "META-004",
+  "domain": "metascience",
+  "title": "AI-assisted peer review 的可靠性、保密與 human oversight",
+  "status": "OPEN",
+  "priority": "B",
+  "checked_on": "2026-09-28",
+  "statement": "在不泄露confidential manuscripts、不中止human accountability前提下，哪些peer-review子任務可由AI可靠輔助，哪些會降低judgment品質。",
+  "known_result": "2026多個Nature editorial強調AI可輔助但不能取代scholarly judgment，並明確警告未公開稿件上傳公共AI的confidentiality風險。",
+  "open_gap": "review quality ground truth、automation bias、reviewer heterogeneity、secure tooling與disclosure norms。",
+  "first_task": "只用公開已發表papers與公開review/評分資料構造模擬review task；比較human-only、AI-outline+human、AI-review。",
+  "evaluator": "error detection、false criticism、coverage、review time、human correction rate。",
+  "validation_limits": "不使用未公開/保密稿件；journal policy並非普遍實驗結論。",
+  "completion_criterion": "在公開benchmark上AI-assist提高可驗證review quality且human retains final judgment；confidentiality contract不被破壞。",
+  "screening_note": "2026-09-28 初始有界文獻篩查。MetaScience研究研究流程本身；每輪需保留protocol版本與外部證據，不以本repo自我評價當成功。",
+  "screening_queries": [
+    "AI peer review scientific publishing 2026"
+  ],
+  "sources": [
+    {
+      "title": "Responsible and transparent use of AI in scientific publishing",
+      "url": "https://www.nature.com/articles/s43588-026-01043-4",
+      "kind": "editorial",
+      "supports": "AI publishing/peer review的accountability、transparency、confidentiality"
+    },
+    {
+      "title": "Peer review in the time of artificial intelligence",
+      "url": "https://www.nature.com/articles/s41565-026-02177-2",
+      "kind": "editorial",
+      "supports": "AI輔助peer review與human judgment邊界"
+    }
+  ]
+}

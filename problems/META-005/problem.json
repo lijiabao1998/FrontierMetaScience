@@ -1,0 +1,27 @@
+{
+  "id": "META-005",
+  "domain": "metascience",
+  "title": "Research artefact reusability 的可測量標準",
+  "status": "OPEN",
+  "priority": "A",
+  "checked_on": "2026-09-28",
+  "statement": "如何把code/data/environment/documentation的“可重用”轉成可操作測量，而不只看repository存在或README長度。",
+  "known_result": "2026 Nature Machine Intelligence強調digital research artefacts應透明一致描述並重新重視reproducibility/reusability。",
+  "open_gap": "dependency rot、license、data availability、undocumented assumptions與task mismatch。",
+  "first_task": "抽取20個公開computational papers，預先定義cold-start reuse task；記從clone到重現/修改的障礙。",
+  "evaluator": "time-to-first-success、manual interventions、environment portability、documentation sufficiency。",
+  "validation_limits": "stars/downloads不等於reusability；單一operator skill會影響結果。",
+  "completion_criterion": "跨operators/fields有穩定predictive的reusability score，且能預測後續成功reuse。",
+  "screening_note": "2026-09-28 初始有界文獻篩查。MetaScience研究研究流程本身；每輪需保留protocol版本與外部證據，不以本repo自我評價當成功。",
+  "screening_queries": [
+    "research artefact reusability reproducibility 2026"
+  ],
+  "sources": [
+    {
+      "title": "Recognizing reproducibility and reusability in times of fast science",
+      "url": "https://www.nature.com/articles/s42256-026-01219-7",
+      "kind": "editorial",
+      "supports": "digital research artefacts的reproducibility/reusability重要性"
+    }
+  ]
+}

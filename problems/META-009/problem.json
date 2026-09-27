@@ -1,0 +1,27 @@
+{
+  "id": "META-009",
+  "domain": "metascience",
+  "title": "Research portfolio 的 exploration–exploitation 配置",
+  "status": "OPEN",
+  "priority": "B",
+  "checked_on": "2026-09-28",
+  "statement": "有限agent/compute budget下，如何在已知高-evaluator-density問題深挖與高不確定新方向探索間分配資源，避免只追容易測量的領域。",
+  "known_result": "2026 Nature commentary指出AI可能提高研究生產力但也可能縮窄研究topic diversity，提示automation會改變research portfolio。",
+  "open_gap": "scientific value不可直接觀察、delayed payoff、field bias與negative-result value。",
+  "first_task": "用本15-repo registry建立toy portfolio simulator，先只用可觀察variables（cost/evaluator/uncertainty），比較greedy/UCB/diversity constraints。",
+  "evaluator": "discovery proxy、coverage/diversity、regret、failure learning、compute use。",
+  "validation_limits": "proxy objective不是science value；不得讓algorithm自動決定真實funding/人事。",
+  "completion_criterion": "在歷史/前瞻internal rounds上配置策略能提高預註冊成果率而不明顯壓縮domain diversity。",
+  "screening_note": "2026-09-28 初始有界文獻篩查。MetaScience研究研究流程本身；每輪需保留protocol版本與外部證據，不以本repo自我評價當成功。",
+  "screening_queries": [
+    "AI scientists research diversity 2026"
+  ],
+  "sources": [
+    {
+      "title": "AI scientists are changing research — institutions, funders and publishers must respond",
+      "url": "https://www.nature.com/articles/d41586-026-00934-w",
+      "kind": "comment",
+      "supports": "AI automation可能改變research productivity與topic diversity"
+    }
+  ]
+}

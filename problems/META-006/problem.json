@@ -1,0 +1,33 @@
+{
+  "id": "META-006",
+  "domain": "metascience",
+  "title": "AI-for-science benchmark leakage / contamination",
+  "status": "OPEN",
+  "priority": "A",
+  "checked_on": "2026-09-28",
+  "statement": "如何辨識模型是否見過paper、solution、benchmark answers或近重複資料，分離memorization、tool retrieval與真正problem solving。",
+  "known_result": "AI-assisted science與benchmark快速擴張使reproducibility、transparency與evaluation integrity更重要；agent reproduction benchmarks也需process-level controls。",
+  "open_gap": "opaque training data、web retrieval、benchmark paraphrases與model updates。",
+  "first_task": "對可控toy benchmark建立public/private/paraphrased variants；分別開/關web，測answer overlap和performance drop。",
+  "evaluator": "clean vs contaminated gap、memorization indicators、solution similarity、calibration。",
+  "validation_limits": "無法證明closed-model training corpus完全不含資料；只能量化可觀察contamination risk。",
+  "completion_criterion": "形成可重現contamination audit，能在held-out synthetic exposures檢出已知leakage並誠實標示unknown。",
+  "screening_note": "2026-09-28 初始有界文獻篩查。MetaScience研究研究流程本身；每輪需保留protocol版本與外部證據，不以本repo自我評價當成功。",
+  "screening_queries": [
+    "AI science benchmark contamination reproducibility 2026"
+  ],
+  "sources": [
+    {
+      "title": "Reproducibility in the era of large language models",
+      "url": "https://www.nature.com/articles/s43588-026-01061-2",
+      "kind": "editorial",
+      "supports": "LLM research透明與reproducibility風險"
+    },
+    {
+      "title": "Overview of the NLPCC 2026 Shared Task 11: Agent-Based Experiment Reproduction from Scientific Papers",
+      "url": "https://arxiv.org/abs/2609.11117",
+      "kind": "primary",
+      "supports": "agent evaluation與process trace benchmark"
+    }
+  ]
+}

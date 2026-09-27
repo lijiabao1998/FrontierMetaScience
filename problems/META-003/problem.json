@@ -1,0 +1,27 @@
+{
+  "id": "META-003",
+  "domain": "metascience",
+  "title": "Scientific causal-claim overreach 的自動稽核",
+  "status": "OPEN",
+  "priority": "A",
+  "checked_on": "2026-09-28",
+  "statement": "agent能否從paper design、methods與wording可靠辨識association被寫成causal的越界，並在低false accusation下提供可審計理由。",
+  "known_result": "2026 Nature Human Behaviour量化social science中overreaching causal claims，提供可作metascience ground truth框架。",
+  "open_gap": "implicit language、field conventions、paper parsing、human disagreement與full-text access。",
+  "first_task": "建50-paper公開sample，由兩位human/agents分別標design + claim strength；classifier只能引用文中evidence。",
+  "evaluator": "precision/recall、inter-rater agreement、calibration、false-positive severity。",
+  "validation_limits": "錯誤標籤可能不公平評價作者；工具只做方法稽核，不評政治立場或動機。",
+  "completion_criterion": "跨fields有高precision且human-consensus穩定，並能區分ambiguous/insufficient evidence。",
+  "screening_note": "2026-09-28 初始有界文獻篩查。MetaScience研究研究流程本身；每輪需保留protocol版本與外部證據，不以本repo自我評價當成功。",
+  "screening_queries": [
+    "causal claim overreach metascience 2026"
+  ],
+  "sources": [
+    {
+      "title": "Quantifying the prevalence and impact of overreaching causal claims in social science",
+      "url": "https://www.nature.com/articles/s41562-026-02553-x",
+      "kind": "primary",
+      "supports": "causal overclaim的量化與design-language mismatch"
+    }
+  ]
+}
