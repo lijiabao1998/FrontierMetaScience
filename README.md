@@ -17,4 +17,4 @@
 | META-009 | Research portfolio 的exploration–exploitation配置 | B |
 | META-010 | AI discovery advantage：能力、compute、tooling與selection的分解 | A |
 
-這個repo不替其他15科宣布突破；它研究哪些治理、agent、reproducibility與evaluation流程真的提高科學產出品質。每輪依治理 091d6a26a4af8522683711483f2b97afd90efa7f fresh search。
+這個repo不替其他15科宣布突破；它研究哪些治理、agent、reproducibility與evaluation流程真的提高科學產出品質。每輪依治理 f40beb161b6c87201d8082ecbc29c7e0b3eaa402 fresh search。
